@@ -28,6 +28,11 @@ h1, h2 {
 
 p {
     color: var(--paragraph);
+    font-size: 1.3rem;
+}
+
+main h2 {
+    font-size: 2rem;
 }
 
 nav a {
@@ -82,7 +87,7 @@ nav {
 }
 
 #container {
-    padding: 2rem;
+    padding: 4rem;
     grid-column: 2;
     background-color: var(--background);
 }
@@ -100,12 +105,13 @@ header img {
 }
 
 header h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     margin: 1rem;
 }
 
 header h1 + p {
-    font-size:1.5rem;
+    font-size:1.25rem;
+    margin-bottom: 2rem;
 }
 
 footer {

@@ -1,22 +1,90 @@
+:root {
+    --background: #abd1c6;
+    --paragraph: #0f3433;
+    --headline: #001e1d;
+    --nav-paragraph: #e8e4e6;
+    --links: #f9bc60;
+    --nav-headline: #fffffe;
+    --nav-background: #004643;
+    --placeholder: #fffffe;
+    --form-input: #004643;
+    --form-text-button: #001e1d;
+    --form-button: #f9bc60;
+    --nav-separator: #001e1d;
+}
 
 body {
+    font-family: proxima-nova, sans-serif;
     display: grid;
-    grid-template-columns: 20% 1fr;
+    background-color: var(--background);
+    grid-template-columns: 18% 1fr;
     grid-template-rows: 1fr;
+    margin: 0;
 }
+
+h1, h2 {
+    color: var(--headline);
+}
+
+p {
+    color: var(--paragraph);
+}
+
+nav a {
+    padding: 0px;
+}
+
+nav h1 {
+    color: var(--nav-headline);
+    font-size: 2.5rem;
+    padding-left: 0.5rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+nav h2 {
+    color: var(--links);
+    transition: 0.2s ease-in;
+}
+
+nav li {
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    border-top: 0.2rem groove var(--nav-separator);
+    transition: background-color 0.2s ease-in-out;
+}
+
+nav ul li:first-child{
+    border-top: none;
+}
+
+nav li:hover h2{
+    translate: 0.2rem -0.2rem 4rem;
+    scale: 1.02
+}
+
+nav li:hover {
+    background-color: var(--nav-separator);
+}
+
 
 nav {
     position: fixed;
+    background-color: var(--nav-background);
     top: 0;
-    width: 20%;
-    padding-top: 3rem;
+    width: 18%;
+    padding-top: 3.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     grid-column: 1;
     grid-row: 1;
     height: 100vh
 }
 
 #container {
+    padding: 2rem;
     grid-column: 2;
+    background-color: var(--background);
 }
 
 header {
@@ -27,7 +95,17 @@ header {
 }
 
 header img {
-    width: fit-content;
+    width: 20rem;
+    border-radius: 100rem;
+}
+
+header h1 {
+    font-size: 4rem;
+    margin: 1rem;
+}
+
+header h1 + p {
+    font-size:1.5rem;
 }
 
 footer {
@@ -42,3 +120,10 @@ ul {
     list-style-type: none;
     padding-left: 0;
 }
+
+a {
+    text-decoration: none;
+    color: var(--links);
+}
+
+

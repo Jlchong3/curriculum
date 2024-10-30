@@ -3,8 +3,8 @@
     --paragraph: #0f3433;
     --headline: #001e1d;
     --nav-paragraph: #e8e4e6;
-    --links: #abd1c6;
-    --nav-headline: #abd1c6;
+    --links: #e8e4e6;
+    --nav-headline: #ebeaebff;
     --nav-background: #004643;
     --placeholder: #fffffe;
     --form-input: #004643;
@@ -31,10 +31,6 @@ p {
     font-size: 1.3rem;
 }
 
-main h2 {
-    font-size: 2rem;
-}
-
 nav a {
     padding: 0px;
 }
@@ -50,7 +46,7 @@ nav h1 {
 nav h2 {
     color: var(--links);
     transition: 0.2s ease-in;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 nav li {
@@ -114,6 +110,11 @@ header h1 + p {
     font-size:1.25rem;
     margin-bottom: 2rem;
 }
+
+main h2 {
+    font-size: 2rem;
+}
+
 
 footer {
     display: flex;

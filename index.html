@@ -15,6 +15,7 @@
             <h1>Sobre mi:</h1>
             <ul>
                 <li><a href="#informacion-personal"><h2>Informacion Personal</h2></a></li>
+                <li><a href="#estudios"><h2>Estudios</h2></a></li>
                 <li><a href="#habilidades-tecnicas"><h2>Habilidades Técnicas</h2></a></li>
                 <li><a href="#proyectos"><h2>Proyectos</h2></a></li>
                 <li><a href="#contactame"><h2>Contáctame</h2></a></li>
@@ -31,9 +32,51 @@
             <main>
                 <section id="resumen">
                     <h2>Informacion Personal</h2>
-                    <p>Soy una persona apasionada por la tecnología y la programación, con una sólida formación en Ingeniería en Ciencias Computacionales. A lo largo de mi trayectoria universitaria, he adquirido conocimientos en diversas áreas de la programación.</p>
-                    <p>Además de mis estudios, imparto clases de programación en la universidad, abarcando temas como fundamentos de programación, estructuras de datos y programación de sistemas. Esta experiencia me ha permitido fortalecer mis habilidades blandas, como la comunicación y la colaboración, al mismo tiempo que profundizo en mis conocimientos.</p>
-                    <p>Tengo un especial interés en la programación de bajo nivel y la ciberseguridad, y cuento con experiencia en lenguajes como C, C++, Python, Java y JavaScript, entre otros. Siempre busco nuevas oportunidades de aprendizaje para expandir mi visión y desarrollarme tanto profesional como personalmente.</p>
+                    <div id="info-container">
+                        <div>
+                            <p>Soy una persona apasionada por la tecnología y la programación, con una sólida formación en Ingeniería en Ciencias Computacionales. A lo largo de mi trayectoria universitaria, he adquirido conocimientos en diversas áreas de la programación.</p>
+                            <p>Además de mis estudios, imparto clases de programación en la universidad, abarcando temas como fundamentos de programación, estructuras de datos y programación de sistemas. Esta experiencia me ha permitido fortalecer mis habilidades blandas, como la comunicación y la colaboración, al mismo tiempo que profundizo en mis conocimientos.</p>
+                            <p>Tengo un especial interés en la programación de bajo nivel y la ciberseguridad, y cuento con experiencia en lenguajes como C, C++, Python, Java y JavaScript, entre otros. Siempre busco nuevas oportunidades de aprendizaje para expandir mi visión y desarrollarme tanto profesional como personalmente.</p>
+                        </div>
+                        <div>
+                            <img src="assets/foto2.jpeg" alt="My Image">
+                        </div>
+                    </div>
+                </section>
+                <section id="estudios">
+                    <h2>Estudios</h2>
+                    <div id="estudios-container">
+                        <div class='education-card'>
+                            <div>
+                                <iframe width="100%" height="100%"
+                                    src="https://www.youtube.com/watch?v=bMpzVCZXD40"
+                                    title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                            <div>
+                                <h3>Colegio Americano de Guayaquil</h3>
+                                <p>"En el Colegio Americano de Guayaquil, ofrecemos una educación de excelencia basada en el modelo educativo estadounidense."</p>
+                            </div>
+                        </div>
+                        <div class='education-card'>
+                            <div>
+                                <iframe width="100%" height="100%"
+                                    src="https://www.youtube.com/watch?v=LH4id9JY9u4"
+                                    title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                            <div>
+                                <h3>Escuela Superior Politécnica del Litoral</h3>
+                                <p>"La ESPOL ha cosechado un gran prestigio en su país demostrando notables esfuerzos en sus ramas de investigación y excelencia académica."</p>
+                            </div>
+                        </div>
+                    </div>
                 </section>
                 <section id="habilidades">
                     <h2>Habilidades Técnicas</h2>
@@ -43,6 +86,17 @@
                 </section>
                 <section id="contactame">
                     <h2>Contáctame</h2>
+                    <form>
+                        <div class='form-input-wrap'>
+                            <label for="name">First name</label>
+                            <input id="name" name="name" placeholder="Your name" type="text">
+                        </div>
+                        <div class='form-input-wrap'>
+                            <label for="email">Email Address</label>
+                            <input id="email" name="email" placeholder="you@example.com" type="email">
+                        </div>
+                        <input type="submit" value="Send">
+                    </form>
                 </section>
             </main>
             <footer>

@@ -103,10 +103,12 @@ header {
 }
 
 header img {
-    width: 20rem;
+    width: 18rem;
     border-radius: 100rem;
-    border: 0.1rem solid #ffffff;
-    box-shadow: 0.1rem 0.2rem 1rem;
+    border: 0.25rem solid #004643;
+    box-shadow: 0.1rem 0.2rem 1rem #093610cc;
+    -webkit-box-shadow: 0.1rem 0.2rem 1rem #093610cc;
+    -moz-box-shadow: 0.1rem 0.2rem 1rem #093610cc;
 }
 
 header h1 {
@@ -115,8 +117,9 @@ header h1 {
 }
 
 header h1 + p {
-    font-size:1.25rem;
+    font-size:1.5rem;
     margin-bottom: 2rem;
+    font-weight: 500;
 }
 
 main h2 {
@@ -144,6 +147,9 @@ main h2 {
 #info-container div img {
     width: 100%;
     border-radius: 0.5rem;
+    -webkit-box-shadow: 0.2rem 0.2rem 0.1rem 0px #093610cc;
+    -moz-box-shadow: 0.2rem 0.2rem 0.1rem 0px #093610cc;
+    box-shadow: 0.5rem 0.5rem 0.7rem 0px #093610cc;
 }
 
 @media screen and (max-width: 1560px) {
@@ -191,6 +197,8 @@ main h2 {
 .education-card p {
     color: var(--card-paragraph);
     font-size: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
 }
 
 form {

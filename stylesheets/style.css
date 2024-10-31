@@ -173,6 +173,8 @@ main h2 {
 #estudios-container {
     display: flex;
     justify-content: space-around;
+    padding-right: 2rem;
+    padding-left: 2rem;
 }
 
 .education-card {
@@ -203,16 +205,51 @@ main h2 {
 
 form {
     display: grid;
-    grid-template-columns: 40% 40% 20%;
-}
-
-.form-input-wrap {
-    width: 100%;
+    grid-template-columns: 1fr 1fr 0.5fr;
+    margin: 0px 5rem;
 }
 
 .form-input-wrap {
     display: flex;
     flex-direction: column;
+    margin-right: 1.25rem;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+input {
+    margin-top: 2.3rem;
+    height: 4rem;
+    font-weight: 700;
+    font-size: 1rem;
+    background-color: var(--form-input);
+    border: none;
+}
+
+input::placeholder{
+    color: var(--placeholder);
+    opacity: 1;
+}
+
+input:focus {
+    outline: 2px solid var(--placeholder);
+}
+
+.form-input-wrap input {
+    padding: 1rem;
+    color: var(--placeholder);
+    padding-left: 2rem;
+    margin-top: 1rem;
+}
+
+.form-input-wrap label {
+    color: var(--paragraph)
+}
+
+#submit-button {
+    width: 10.5rem;
+    background-color: var(--form-button);
+    color: var(--form-text-button);
 }
 
 footer {

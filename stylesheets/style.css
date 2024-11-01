@@ -5,7 +5,7 @@
     --nav-paragraph: #e8e4e6;
     --links: #e8e4e6;
     --card-paragraph: #e8e4e6;
-    --nav-headline: #ebeaebff;
+    --nav-headline: #ebeaeb;
     --nav-background: #004643;
     --card-background: #004643;
     --placeholder: #fffffe;
@@ -203,6 +203,41 @@ main h2 {
     padding-left: 1rem;
 }
 
+.tecnologias-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.tecnologia {
+    width: 7rem;
+    height: 7rem;
+    background-color: #004643cc;
+    box-shadow: 0.1rem 0.2rem 1rem #093610cc;
+    -webkit-box-shadow: 0.1rem 0.2rem 1rem #093610cc;
+    -moz-box-shadow: 0.1rem 0.2rem 1rem #093610cc;
+    color: #e8e4e6cc;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    border: 0.2rem solid #e8e4e6cc;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.tecnologia div {
+    font-size: 3.5rem;
+}
+
+.tecnologia span {
+    font-size: 1.25rem;
+    margin-top: 0.25rem;
+}
+
+
+
 form {
     display: grid;
     grid-template-columns: 1fr 1fr 0.5fr;
@@ -253,6 +288,7 @@ input:focus {
 }
 
 footer {
+    margin-top: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;

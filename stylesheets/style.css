@@ -191,6 +191,11 @@ main h2 {
     color: var(--card-paragraph)
 }
 
+.education-card h3 {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
 .education-card div:last-child {
     border-top: 0.2rem groove white;
     background-color: var(--card-background);
